@@ -110,6 +110,40 @@ text-align:center;
 padding:20px;
 font-weight:bold;
 }
+  /* جعل البطاقات مرنة */
+.card {
+  width: 90%;
+  max-width: 300px;
+}
+
+/* الأزرار الكبيرة تتغير حسب الشاشة */
+.bigBtn {
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+/* Media Queries للهواتف */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 40px 20px;
+    font-size: 18px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bigBtn {
+    font-size: 16px;
+    padding: 15px;
+  }
+  #lectures li {
+    width: 95%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 </style>
 </head>
 
